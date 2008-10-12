@@ -5,4 +5,4 @@ require 'hoodwinkd'
 
 Hoodwinkd.connect File.expand_path('../../config/database.yml', __FILE__)
 Hoodwinkd.create
-Hoodwinkd.serve
+

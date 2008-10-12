@@ -1,4 +1,4 @@
-
+require 'ruby-debug'
 module Hoodwinkd::Controllers
     class DialSite < R "/dial/site", "/dial/site/(#{DOMAIN})"
         def load(domain)
@@ -14,9 +14,9 @@ module Hoodwinkd::Controllers
         end
         def post(domain)
             self.load(domain)
-            if @site.creator_id.to_i.zero?
+            # if @site.creator_id.to_i.zero?
                 @site.creator_id = @user.id
-            end
+            # end
             if @site.save
                 @input.layer.update(:site_id => @site.id)
                 @layer.update_attributes(@input.layer)

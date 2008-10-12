@@ -1,6 +1,13 @@
 require 'rubygems'
 require 'camping'
 require 'camping/session'
+require 'ruby-debug'
+require 'logger'
+
+RAILS_DEFAULT_LOGGER = Logger.new('debug.log')
+RAILS_DEFAULT_LOGGER.level = Logger::DEBUG
+ActiveRecord::Base.logger = RAILS_DEFAULT_LOGGER
+
 
 $:.unshift File.dirname(__FILE__)
 Camping.goes :Hoodwinkd
@@ -41,7 +48,7 @@ def Hoodwinkd.connect dbfile
     ::SALT.replace conf['salt']
     Hoodwinkd::Models::Base.establish_connection(conf)
     Hoodwinkd::Models::Base.logger = Logger.new('camping.log') if $DEBUG
-    Hoodwinkd::Models::Base.threaded_connections=false
+    # Hoodwinkd::Models::Base.threaded_connections=false
     Hoodwinkd::Models::Base.verification_timeout = 14400 if conf['adapter'] == 'mysql'
 end
 
@@ -56,18 +63,22 @@ end
 
 def Hoodwinkd.serve
     require 'mongrel'
-    require 'mongrel/camping'
+    require 'rack/adapter/camping'
+    require 'rack/handler/mongrel'
+    
+    app = Rack::Adapter::Camping.new(Hoodwinkd)
+    Rack::Handler::Mongrel.run(app, {:Host => "127.0.0.1", :Port => 3301})
 
     # Use the Configurator as an example rather than Mongrel::Camping.start
-    config = Mongrel::Configurator.new :host => "0.0.0.0" do
-        listener :port => 3301 do
-            uri "/", :handler => Mongrel::Camping::CampingHandler.new(Hoodwinkd)
-            uri "/favicon", :handler => Mongrel::Error404Handler.new("")
-            trap("INT") { stop }
-            run
-        end
-    end
+    # config = Mongrel::Configurator.new :host => "0.0.0.0" do
+    #     listener :port => 3302 do
+    #         uri "/", :handler => Mongrel::Camping::CampingHandler.new(Hoodwinkd)
+    #         uri "/favicon", :handler => Mongrel::Error404Handler.new("")
+    #         trap("INT") { stop }
+    #         run
+    #     end
+    # end
 
-    puts "** Hoodwinkd is running at http://localhost:3301/"
+    puts "** Hoodwinkd is running at http://localhost:3302/"
     config.join
 end

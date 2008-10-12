@@ -1,0 +1,475 @@
+# Logfile created on Sat Oct 11 10:01:17 -0500 2008 by /
+  [4;36;1mSQL (0.001472)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000941)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mCamping::Models::Session Load (0.000550)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+
+***** The 'breakpoint' command has been renamed 'debugger' -- please change *****
+
+  [4;35;1mHoodwinkd::Models::User Load (0.000486)[0m   [0mSELECT * FROM "hoodwinkd_users" [0m
+  [4;36;1mHoodwinkd::Models::Site Load IDs For Limited Eager Loading (0.001081)[0m   [0;1mSELECT DISTINCT "hoodwinkd_sites".id FROM "hoodwinkd_sites" WHERE ("hoodwinkd_sites"."domain" = 'jonpliske.com') LIMIT 1[0m
+  [4;35;1mCamping::Models::Session Load (0.001301)[0m   [0mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;36;1mCamping::Models::Session Load (0.000853)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;35;1mCamping::Models::Session Load (0.000821)[0m   [0mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;36;1mCamping::Models::Session Load (0.000839)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;35;1mCamping::Models::Session Load (0.000867)[0m   [0mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+
+***** The 'breakpoint' command has been renamed 'debugger' -- please change *****
+
+  [4;36;1mHoodwinkd::Models::Site Load IDs For Limited Eager Loading (0.000833)[0m   [0;1mSELECT DISTINCT "hoodwinkd_sites".id FROM "hoodwinkd_sites" WHERE ("hoodwinkd_sites"."domain" = 'boingboing.com') LIMIT 1[0m
+  [4;35;1mCamping::Models::Session Load (0.000876)[0m   [0mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+
+***** The 'breakpoint' command has been renamed 'debugger' -- please change *****
+
+  [4;36;1mHoodwinkd::Models::Site Load IDs For Limited Eager Loading (0.001012)[0m   [0;1mSELECT DISTINCT "hoodwinkd_sites".id FROM "hoodwinkd_sites" WHERE ("hoodwinkd_sites"."domain" = 'boingboing.com') LIMIT 1[0m
+  [4;35;1mSQL (0.000257)[0m   [0mSELECT "domain" FROM "hoodwinkd_sites" WHERE ("hoodwinkd_sites".domain = 'boingboing.com') [0m
+  [4;36;1mHoodwinkd::Models::Site Create (0.000000)[0m   [0;1mSQLite3::SQLException: hoodwinkd_sites.creator_id may not be NULL: INSERT INTO "hoodwinkd_sites" ("created_at", "domain", "linked_site", "creator_id", "real_domain", "enabled", "type") VALUES('2008-10-11 10:10:19', 'boingboing.com', NULL, NULL, NULL, 't', NULL)[0m
+  [4;35;1mCamping::Models::Session Load (0.000799)[0m   [0mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;36;1mCamping::Models::Session Load (0.000874)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+
+***** The 'breakpoint' command has been renamed 'debugger' -- please change *****
+
+  [4;35;1mHoodwinkd::Models::Site Load IDs For Limited Eager Loading (0.001061)[0m   [0mSELECT DISTINCT "hoodwinkd_sites".id FROM "hoodwinkd_sites" WHERE ("hoodwinkd_sites"."domain" = 'boingboing.com') LIMIT 1[0m
+  [4;36;1mCamping::Models::Session Load (0.000944)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;35;1mCamping::Models::Session Load (0.000911)[0m   [0mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;36;1mSQL (0.000322)[0m   [0;1mSELECT "login" FROM "hoodwinkd_users" WHERE ("hoodwinkd_users".login = 'asleeper') [0m
+  [4;35;1mSQL (0.000259)[0m   [0mSELECT "email" FROM "hoodwinkd_users" WHERE ("hoodwinkd_users".email = 'jon@jonpliske.com') [0m
+  [4;36;1mSQL (0.000603)[0m   [0;1mSELECT count(used_at IS NULL) AS count_used_at_is_null FROM "hoodwinkd_hashes" [0m
+  [4;35;1mHoodwinkd::Models::Hash Load (0.000661)[0m   [0mSELECT * FROM "hoodwinkd_hashes" WHERE (used_at IS NULL) LIMIT 1[0m
+  [4;36;1mHoodwinkd::Models::Hash Destroy (0.000446)[0m   [0;1m DELETE FROM "hoodwinkd_hashes"
+ WHERE "id" = 1
+[0m
+  [4;35;1mSQL (0.000318)[0m   [0mSELECT "login" FROM "hoodwinkd_users" WHERE ("hoodwinkd_users".login = 'asleeper') [0m
+  [4;36;1mSQL (0.000240)[0m   [0;1mSELECT "email" FROM "hoodwinkd_users" WHERE ("hoodwinkd_users".email = 'jon@jonpliske.com') [0m
+  [4;35;1mHoodwinkd::Models::User Create (0.000463)[0m   [0mINSERT INTO "hoodwinkd_users" ("created_at", "activated_at", "theme_css", "theme_url", "nameplate", "security_token", "deleted", "namehue", "login", "password", "email") VALUES('2008-10-11 10:11:21', NULL, NULL, NULL, NULL, '062667ae8cf3f168b323144ef98eac9e', 0, NULL, 'asleeper', '2e1d7bf2141ba1308ac8f88312dec93d', 'jon@jonpliske.com')[0m
+  [4;36;1mCamping::Models::Session Update (0.000798)[0m   [0;1mUPDATE "sessions" SET "ivars" = '--- !map:HashWithIndifferentAccess 
+Hoodwinkd: !map:HashWithIndifferentAccess 
+ user_id: 1
+' WHERE "id" = 2[0m
+  [4;35;1mCamping::Models::Session Load (0.001485)[0m   [0mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;36;1mHoodwinkd::Models::User Load (0.002117)[0m   [0;1mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;35;1mCamping::Models::Session Load (0.000955)[0m   [0mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;36;1mHoodwinkd::Models::User Load (0.001467)[0m   [0;1mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;35;1mCamping::Models::Session Load (0.000855)[0m   [0mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;36;1mHoodwinkd::Models::User Load (0.001612)[0m   [0;1mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;35;1mHoodwinkd::Models::Site Load (0.000259)[0m   [0mSELECT * FROM "hoodwinkd_sites" [0m
+  [4;36;1mCamping::Models::Session Load (0.001544)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::User Load (0.001472)[0m   [0mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;36;1mCamping::Models::Session Load (0.000885)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::User Load (0.001407)[0m   [0mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;36;1mCamping::Models::Session Load (0.000932)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::User Load (0.001613)[0m   [0mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;36;1mHoodwinkd::Models::Site Load (0.000257)[0m   [0;1mSELECT * FROM "hoodwinkd_sites" [0m
+  [4;35;1mCamping::Models::Session Load (0.001316)[0m   [0mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;36;1mHoodwinkd::Models::User Load (0.001814)[0m   [0;1mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+
+***** The 'breakpoint' command has been renamed 'debugger' -- please change *****
+
+  [4;35;1mHoodwinkd::Models::Site Load (0.000000)[0m   [0mSQLite3::SQLException: no such column: hoodwinkd_sites.user_id: SELECT * FROM "hoodwinkd_sites" WHERE ("hoodwinkd_sites".user_id = 1) [0m
+  [4;36;1mHoodwinkd::Models::Site Load IDs For Limited Eager Loading (0.000761)[0m   [0;1mSELECT DISTINCT "hoodwinkd_sites".id FROM "hoodwinkd_sites" WHERE ("hoodwinkd_sites"."domain" = 'boingboing.com') LIMIT 1[0m
+  [4;35;1mCamping::Models::Session Load (0.001072)[0m   [0mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;36;1mHoodwinkd::Models::User Load (0.001478)[0m   [0;1mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+
+***** The 'breakpoint' command has been renamed 'debugger' -- please change *****
+
+  [4;35;1mHoodwinkd::Models::Site Load (0.000000)[0m   [0mSQLite3::SQLException: no such column: hoodwinkd_sites.user_id: SELECT * FROM "hoodwinkd_sites" WHERE ("hoodwinkd_sites".user_id = 1) [0m
+  [4;36;1mHoodwinkd::Models::Site Load IDs For Limited Eager Loading (0.000761)[0m   [0;1mSELECT DISTINCT "hoodwinkd_sites".id FROM "hoodwinkd_sites" WHERE ("hoodwinkd_sites"."domain" = 'boingboing.com') LIMIT 1[0m
+  [4;35;1mSQL (0.000275)[0m   [0mSELECT "domain" FROM "hoodwinkd_sites" WHERE ("hoodwinkd_sites".domain = 'boingboing.com') [0m
+  [4;36;1mHoodwinkd::Models::Site Create (0.000522)[0m   [0;1mINSERT INTO "hoodwinkd_sites" ("created_at", "domain", "linked_site", "creator_id", "real_domain", "enabled", "type") VALUES('2008-10-11 10:17:03', 'boingboing.com', NULL, 1, NULL, 't', NULL)[0m
+  [4;35;1mSQL (0.000472)[0m   [0mSELECT "name" FROM "hoodwinkd_layers" WHERE ("hoodwinkd_layers".name = 'Root' AND "hoodwinkd_layers".site_id = 1) [0m
+  [4;36;1mHoodwinkd::Models::Layer Create (0.000565)[0m   [0;1mINSERT INTO "hoodwinkd_layers" ("name", "fullpost_qvars", "css", "fullpost_xpath", "fullpost_url_match", "site_id") VALUES('Root', '', '', '//div[@class=''comments-content'']', '/d+/d+/d+/[w-]+.html', 1)[0m
+  [4;36;1mSQL (0.001458)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000952)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mCamping::Models::Session Load (0.000562)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::User Load (0.000822)[0m   [0mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+
+***** The 'breakpoint' command has been renamed 'debugger' -- please change *****
+
+  [4;36;1mHoodwinkd::Models::Site Load IDs For Limited Eager Loading (0.001000)[0m   [0;1mSELECT DISTINCT "hoodwinkd_sites".id FROM "hoodwinkd_sites" WHERE ("hoodwinkd_sites"."domain" = 'boingboing.com') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::Site Load Including Associations (0.002156)[0m   [0mSELECT "hoodwinkd_sites"."id" AS t0_r0, "hoodwinkd_sites"."creator_id" AS t0_r1, "hoodwinkd_sites"."domain" AS t0_r2, "hoodwinkd_sites"."real_domain" AS t0_r3, "hoodwinkd_sites"."type" AS t0_r4, "hoodwinkd_sites"."linked_site" AS t0_r5, "hoodwinkd_sites"."created_at" AS t0_r6, "hoodwinkd_sites"."enabled" AS t0_r7, "hoodwinkd_layers"."id" AS t1_r0, "hoodwinkd_layers"."site_id" AS t1_r1, "hoodwinkd_layers"."name" AS t1_r2, "hoodwinkd_layers"."fullpost_xpath" AS t1_r3, "hoodwinkd_layers"."fullpost_url_match" AS t1_r4, "hoodwinkd_layers"."fullpost_qvars" AS t1_r5, "hoodwinkd_layers"."css" AS t1_r6 FROM "hoodwinkd_sites" LEFT OUTER JOIN "hoodwinkd_layers" ON hoodwinkd_layers.site_id = hoodwinkd_sites.id WHERE ("hoodwinkd_sites"."domain" = 'boingboing.com') AND "hoodwinkd_sites".id IN (1) [0m
+  [4;36;1mSQL (0.000483)[0m   [0;1mSELECT "domain" FROM "hoodwinkd_sites" WHERE ("hoodwinkd_sites".domain = 'boingboing.com' AND "hoodwinkd_sites".id <> 1) [0m
+  [4;35;1mSQL (0.000313)[0m   [0mSELECT "name" FROM "hoodwinkd_layers" WHERE ("hoodwinkd_layers".name = 'Root' AND "hoodwinkd_layers".site_id = 1 AND "hoodwinkd_layers".id <> 1) [0m
+  [4;36;1mCamping::Models::Session Load (0.000964)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::User Load (0.001475)[0m   [0mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;36;1mCamping::Models::Session Load (0.000966)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::User Load (0.001409)[0m   [0mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;36;1mCamping::Models::Session Load (0.000803)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::User Load (0.001427)[0m   [0mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;36;1mCamping::Models::Session Load (0.000818)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::User Load (0.001445)[0m   [0mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;36;1mCamping::Models::Session Load (0.001103)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::User Load (0.001433)[0m   [0mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+
+***** The 'breakpoint' command has been renamed 'debugger' -- please change *****
+
+  [4;36;1mHoodwinkd::Models::Site Load IDs For Limited Eager Loading (0.001224)[0m   [0;1mSELECT DISTINCT "hoodwinkd_sites".id FROM "hoodwinkd_sites" WHERE ("hoodwinkd_sites"."domain" = 'boingboing.com') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::Site Load Including Associations (0.002565)[0m   [0mSELECT "hoodwinkd_sites"."id" AS t0_r0, "hoodwinkd_sites"."creator_id" AS t0_r1, "hoodwinkd_sites"."domain" AS t0_r2, "hoodwinkd_sites"."real_domain" AS t0_r3, "hoodwinkd_sites"."type" AS t0_r4, "hoodwinkd_sites"."linked_site" AS t0_r5, "hoodwinkd_sites"."created_at" AS t0_r6, "hoodwinkd_sites"."enabled" AS t0_r7, "hoodwinkd_layers"."id" AS t1_r0, "hoodwinkd_layers"."site_id" AS t1_r1, "hoodwinkd_layers"."name" AS t1_r2, "hoodwinkd_layers"."fullpost_xpath" AS t1_r3, "hoodwinkd_layers"."fullpost_url_match" AS t1_r4, "hoodwinkd_layers"."fullpost_qvars" AS t1_r5, "hoodwinkd_layers"."css" AS t1_r6 FROM "hoodwinkd_sites" LEFT OUTER JOIN "hoodwinkd_layers" ON hoodwinkd_layers.site_id = hoodwinkd_sites.id WHERE ("hoodwinkd_sites"."domain" = 'boingboing.com') AND "hoodwinkd_sites".id IN (1) [0m
+  [4;36;1mSQL (0.000268)[0m   [0;1mSELECT "domain" FROM "hoodwinkd_sites" WHERE ("hoodwinkd_sites".domain = 'boingboing.com' AND "hoodwinkd_sites".id <> 1) [0m
+  [4;35;1mSQL (0.000295)[0m   [0mSELECT "name" FROM "hoodwinkd_layers" WHERE ("hoodwinkd_layers".name = 'Root' AND "hoodwinkd_layers".site_id = 1 AND "hoodwinkd_layers".id <> 1) [0m
+  [4;36;1mCamping::Models::Session Load (0.000953)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::User Load (0.001416)[0m   [0mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;36;1mCamping::Models::Session Load (0.000881)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::User Load (0.001436)[0m   [0mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;36;1mCamping::Models::Session Load (0.000816)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::User Load (0.001449)[0m   [0mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;36;1mCamping::Models::Session Load (0.000853)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::User Load (0.001422)[0m   [0mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;36;1mCamping::Models::Session Load (0.000924)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::User Load (0.001454)[0m   [0mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+
+***** The 'breakpoint' command has been renamed 'debugger' -- please change *****
+
+  [4;36;1mHoodwinkd::Models::Site Load IDs For Limited Eager Loading (0.001409)[0m   [0;1mSELECT DISTINCT "hoodwinkd_sites".id FROM "hoodwinkd_sites" WHERE ("hoodwinkd_sites"."domain" = 'boingboing.com') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::Site Load Including Associations (0.002416)[0m   [0mSELECT "hoodwinkd_sites"."id" AS t0_r0, "hoodwinkd_sites"."creator_id" AS t0_r1, "hoodwinkd_sites"."domain" AS t0_r2, "hoodwinkd_sites"."real_domain" AS t0_r3, "hoodwinkd_sites"."type" AS t0_r4, "hoodwinkd_sites"."linked_site" AS t0_r5, "hoodwinkd_sites"."created_at" AS t0_r6, "hoodwinkd_sites"."enabled" AS t0_r7, "hoodwinkd_layers"."id" AS t1_r0, "hoodwinkd_layers"."site_id" AS t1_r1, "hoodwinkd_layers"."name" AS t1_r2, "hoodwinkd_layers"."fullpost_xpath" AS t1_r3, "hoodwinkd_layers"."fullpost_url_match" AS t1_r4, "hoodwinkd_layers"."fullpost_qvars" AS t1_r5, "hoodwinkd_layers"."css" AS t1_r6 FROM "hoodwinkd_sites" LEFT OUTER JOIN "hoodwinkd_layers" ON hoodwinkd_layers.site_id = hoodwinkd_sites.id WHERE ("hoodwinkd_sites"."domain" = 'boingboing.com') AND "hoodwinkd_sites".id IN (1) [0m
+  [4;36;1mSQL (0.000260)[0m   [0;1mSELECT "domain" FROM "hoodwinkd_sites" WHERE ("hoodwinkd_sites".domain = 'boingboing.com' AND "hoodwinkd_sites".id <> 1) [0m
+  [4;35;1mSQL (0.000288)[0m   [0mSELECT "name" FROM "hoodwinkd_layers" WHERE ("hoodwinkd_layers".name = 'Root' AND "hoodwinkd_layers".site_id = 1 AND "hoodwinkd_layers".id <> 1) [0m
+  [4;36;1mCamping::Models::Session Load (0.000942)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::User Load (0.001405)[0m   [0mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;36;1mHoodwinkd::Models::Site Load (0.001092)[0m   [0;1mSELECT * FROM "hoodwinkd_sites" [0m
+  [4;35;1mCamping::Models::Session Load (0.000891)[0m   [0mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;36;1mHoodwinkd::Models::User Load (0.001461)[0m   [0;1mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+
+***** The 'breakpoint' command has been renamed 'debugger' -- please change *****
+
+  [4;35;1mHoodwinkd::Models::Site Load IDs For Limited Eager Loading (0.001085)[0m   [0mSELECT DISTINCT "hoodwinkd_sites".id FROM "hoodwinkd_sites" WHERE ("hoodwinkd_sites"."domain" = 'boingboing.com') LIMIT 1[0m
+  [4;36;1mHoodwinkd::Models::Site Load Including Associations (0.002362)[0m   [0;1mSELECT "hoodwinkd_sites"."id" AS t0_r0, "hoodwinkd_sites"."creator_id" AS t0_r1, "hoodwinkd_sites"."domain" AS t0_r2, "hoodwinkd_sites"."real_domain" AS t0_r3, "hoodwinkd_sites"."type" AS t0_r4, "hoodwinkd_sites"."linked_site" AS t0_r5, "hoodwinkd_sites"."created_at" AS t0_r6, "hoodwinkd_sites"."enabled" AS t0_r7, "hoodwinkd_layers"."id" AS t1_r0, "hoodwinkd_layers"."site_id" AS t1_r1, "hoodwinkd_layers"."name" AS t1_r2, "hoodwinkd_layers"."fullpost_xpath" AS t1_r3, "hoodwinkd_layers"."fullpost_url_match" AS t1_r4, "hoodwinkd_layers"."fullpost_qvars" AS t1_r5, "hoodwinkd_layers"."css" AS t1_r6 FROM "hoodwinkd_sites" LEFT OUTER JOIN "hoodwinkd_layers" ON hoodwinkd_layers.site_id = hoodwinkd_sites.id WHERE ("hoodwinkd_sites"."domain" = 'boingboing.com') AND "hoodwinkd_sites".id IN (1) [0m
+  [4;35;1mCamping::Models::Session Load (0.000890)[0m   [0mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;36;1mHoodwinkd::Models::User Load (0.001490)[0m   [0;1mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;35;1mHoodwinkd::Models::Site Load (0.001079)[0m   [0mSELECT * FROM "hoodwinkd_sites" [0m
+  [4;36;1mCamping::Models::Session Load (0.000905)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::User Load (0.001452)[0m   [0mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;36;1mCamping::Models::Session Load (0.000962)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::User Load (0.001405)[0m   [0mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;36;1mSQL (0.001556)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000979)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mCamping::Models::Session Load (0.000524)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::User Load (0.000813)[0m   [0mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;36;1mHoodwinkd::Models::Site Load (0.000617)[0m   [0;1mSELECT * FROM "hoodwinkd_sites" [0m
+  [4;35;1mCamping::Models::Session Load (0.000615)[0m   [0mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;36;1mHoodwinkd::Models::User Load (0.000796)[0m   [0;1mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;35;1mCamping::Models::Session Load (0.000578)[0m   [0mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;36;1mHoodwinkd::Models::User Load (0.001620)[0m   [0;1mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;35;1mCamping::Models::Session Load (0.000786)[0m   [0mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;36;1mHoodwinkd::Models::User Load (0.000813)[0m   [0;1mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+
+***** The 'breakpoint' command has been renamed 'debugger' -- please change *****
+
+  [4;35;1mHoodwinkd::Models::Site Load IDs For Limited Eager Loading (0.000826)[0m   [0mSELECT DISTINCT "hoodwinkd_sites".id FROM "hoodwinkd_sites" WHERE ("hoodwinkd_sites"."domain" = 'daringfireball.net') LIMIT 1[0m
+  [4;36;1mCamping::Models::Session Load (0.000898)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::User Load (0.001472)[0m   [0mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+
+***** The 'breakpoint' command has been renamed 'debugger' -- please change *****
+
+  [4;36;1mHoodwinkd::Models::Site Load IDs For Limited Eager Loading (0.001039)[0m   [0;1mSELECT DISTINCT "hoodwinkd_sites".id FROM "hoodwinkd_sites" WHERE ("hoodwinkd_sites"."domain" = 'daringfireball.net') LIMIT 1[0m
+  [4;35;1mSQL (0.000415)[0m   [0mSELECT "domain" FROM "hoodwinkd_sites" WHERE ("hoodwinkd_sites".domain = 'daringfireball.net') [0m
+  [4;36;1mHoodwinkd::Models::Site Create (0.000672)[0m   [0;1mINSERT INTO "hoodwinkd_sites" ("created_at", "domain", "linked_site", "creator_id", "real_domain", "enabled", "type") VALUES('2008-10-11 10:25:31', 'daringfireball.net', NULL, 1, NULL, 't', NULL)[0m
+  [4;35;1mSQL (0.000546)[0m   [0mSELECT "name" FROM "hoodwinkd_layers" WHERE ("hoodwinkd_layers".name = 'Root' AND "hoodwinkd_layers".site_id = 2) [0m
+  [4;36;1mHoodwinkd::Models::Layer Create (0.000610)[0m   [0;1mINSERT INTO "hoodwinkd_layers" ("name", "fullpost_qvars", "css", "fullpost_xpath", "fullpost_url_match", "site_id") VALUES('Root', '', '', '//div[@class=''article'']', '/d+/d+/[w-_]+', 2)[0m
+  [4;35;1mCamping::Models::Session Load (0.000941)[0m   [0mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;36;1mHoodwinkd::Models::User Load (0.001651)[0m   [0;1mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;35;1mCamping::Models::Session Load (0.001324)[0m   [0mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;36;1mHoodwinkd::Models::User Load (0.002436)[0m   [0;1mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;35;1mHoodwinkd::Models::Site Load (0.002472)[0m   [0mSELECT * FROM "hoodwinkd_sites" [0m
+  [4;36;1mCamping::Models::Session Load (0.000928)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::User Load (0.001448)[0m   [0mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;36;1mCamping::Models::Session Load (0.000933)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::User Load (0.001463)[0m   [0mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;36;1mCamping::Models::Session Update (0.000541)[0m   [0;1mUPDATE "sessions" SET "ivars" = '--- !map:HashWithIndifferentAccess 
+Hoodwinkd: !map:HashWithIndifferentAccess {}
+
+' WHERE "id" = 2[0m
+  [4;35;1mCamping::Models::Session Load (0.001306)[0m   [0mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;36;1mCamping::Models::Session Load (0.000867)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::User Load (0.001554)[0m   [0mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."login" = 'asleeper') LIMIT 1[0m
+  [4;36;1mCamping::Models::Session Update (0.000477)[0m   [0;1mUPDATE "sessions" SET "ivars" = '--- !map:HashWithIndifferentAccess 
+Hoodwinkd: !map:HashWithIndifferentAccess 
+ user_id: 1
+' WHERE "id" = 2[0m
+  [4;35;1mCamping::Models::Session Load (0.001463)[0m   [0mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;36;1mHoodwinkd::Models::User Load (0.002195)[0m   [0;1mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;35;1mCamping::Models::Session Load (0.001413)[0m   [0mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;36;1mHoodwinkd::Models::User Load (0.001414)[0m   [0;1mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;35;1mCamping::Models::Session Update (0.000486)[0m   [0mUPDATE "sessions" SET "ivars" = '--- !map:HashWithIndifferentAccess 
+Hoodwinkd: !map:HashWithIndifferentAccess {}
+
+' WHERE "id" = 2[0m
+  [4;36;1mCamping::Models::Session Load (0.001250)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;35;1mCamping::Models::Session Load (0.000861)[0m   [0mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;36;1mCamping::Models::Session Load (0.000890)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::User Load (0.001420)[0m   [0mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."login" = 'asleeper') LIMIT 1[0m
+  [4;36;1mCamping::Models::Session Update (0.000489)[0m   [0;1mUPDATE "sessions" SET "ivars" = '--- !map:HashWithIndifferentAccess 
+Hoodwinkd: !map:HashWithIndifferentAccess 
+ user_id: 1
+' WHERE "id" = 2[0m
+  [4;35;1mCamping::Models::Session Load (0.000873)[0m   [0mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;36;1mHoodwinkd::Models::User Load (0.001420)[0m   [0;1mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;35;1mCamping::Models::Session Load (0.001272)[0m   [0mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;36;1mHoodwinkd::Models::User Load (0.002031)[0m   [0;1mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;35;1mCamping::Models::Session Update (0.000470)[0m   [0mUPDATE "sessions" SET "ivars" = '--- !map:HashWithIndifferentAccess 
+Hoodwinkd: !map:HashWithIndifferentAccess {}
+
+' WHERE "id" = 2[0m
+  [4;36;1mCamping::Models::Session Load (0.001449)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;36;1mSQL (0.001481)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000958)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.001586)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000983)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mCamping::Models::Session Load (0.000618)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;35;1mCamping::Models::Session Load (0.000551)[0m   [0mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;36;1mCamping::Models::Session Load (0.000619)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;35;1mCamping::Models::Session Load (0.000496)[0m   [0mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;36;1mCamping::Models::Session Load (0.000509)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;35;1mCamping::Models::Session Load (0.000536)[0m   [0mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;36;1mCamping::Models::Session Load (0.000796)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;35;1mCamping::Models::Session Load (0.000592)[0m   [0mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;36;1mCamping::Models::Session Load (0.000545)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;35;1mCamping::Models::Session Load (0.000483)[0m   [0mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;36;1mCamping::Models::Session Load (0.000626)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;36;1mSQL (0.001457)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000946)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.018871)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.001964)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mCamping::Models::Session Load (0.000927)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;35;1mCamping::Models::Session Load (0.000599)[0m   [0mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;36;1mCamping::Models::Session Load (0.000459)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::Site Load (0.000261)[0m   [0mSELECT * FROM "hoodwinkd_sites" WHERE ("hoodwinkd_sites"."domain" = 'favicon.ico') LIMIT 1[0m
+  [4;36;1mCamping::Models::Session Load (0.000810)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;35;1mCamping::Models::Session Load (0.000447)[0m   [0mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;36;1mCamping::Models::Session Load (0.000546)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'aGqdONlzzOHAjU0LqCw3XCPTA5QZ7alC') LIMIT 1[0m
+  [4;35;1mCamping::Models::Session Load (0.000277)[0m   [0mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'i64oFFojFyEwO8NOKbbZsWUa59LewgH8') LIMIT 1[0m
+  [4;36;1mCamping::Models::Session Create (0.000702)[0m   [0;1mINSERT INTO "sessions" ("created_at", "hashid", "ivars") VALUES('2008-10-11 11:51:24', 'DthsV8yr8lSnKhDrT90nrKpsxd7Fd7AM', '--- !map:HashWithIndifferentAccess {}
+
+')[0m
+  [4;35;1mCamping::Models::Session Load (0.000597)[0m   [0mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'DthsV8yr8lSnKhDrT90nrKpsxd7Fd7AM') LIMIT 1[0m
+  [4;36;1mCamping::Models::Session Load (0.001212)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'DthsV8yr8lSnKhDrT90nrKpsxd7Fd7AM') LIMIT 1[0m
+  [4;35;1mCamping::Models::Session Load (0.000725)[0m   [0mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'DthsV8yr8lSnKhDrT90nrKpsxd7Fd7AM') LIMIT 1[0m
+  [4;36;1mCamping::Models::Session Load (0.000587)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'DthsV8yr8lSnKhDrT90nrKpsxd7Fd7AM') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::Site Load (0.000323)[0m   [0mSELECT * FROM "hoodwinkd_sites" WHERE ("hoodwinkd_sites"."domain" = 'favicon.ico') LIMIT 1[0m
+  [4;36;1mCamping::Models::Session Load (0.000549)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'DthsV8yr8lSnKhDrT90nrKpsxd7Fd7AM') LIMIT 1[0m
+  [4;35;1mCamping::Models::Session Load (0.000671)[0m   [0mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'DthsV8yr8lSnKhDrT90nrKpsxd7Fd7AM') LIMIT 1[0m
+  [4;36;1mHoodwinkd::Models::Site Load (0.000224)[0m   [0;1mSELECT * FROM "hoodwinkd_sites" WHERE ("hoodwinkd_sites"."domain" = 'favicon.ico') LIMIT 1[0m
+  [4;35;1mCamping::Models::Session Load (0.000474)[0m   [0mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'DthsV8yr8lSnKhDrT90nrKpsxd7Fd7AM') LIMIT 1[0m
+  [4;36;1mCamping::Models::Session Load (0.001557)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'DthsV8yr8lSnKhDrT90nrKpsxd7Fd7AM') LIMIT 1[0m
+  [4;35;1mCamping::Models::Session Load (0.000572)[0m   [0mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'DthsV8yr8lSnKhDrT90nrKpsxd7Fd7AM') LIMIT 1[0m
+  [4;36;1mCamping::Models::Session Load (0.001158)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'DthsV8yr8lSnKhDrT90nrKpsxd7Fd7AM') LIMIT 1[0m
+  [4;35;1mCamping::Models::Session Load (0.000625)[0m   [0mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'DthsV8yr8lSnKhDrT90nrKpsxd7Fd7AM') LIMIT 1[0m
+  [4;36;1mCamping::Models::Session Load (0.000621)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'DthsV8yr8lSnKhDrT90nrKpsxd7Fd7AM') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::User Load (0.001313)[0m   [0mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."login" = 'asleeper') LIMIT 1[0m
+  [4;36;1mCamping::Models::Session Update (0.001489)[0m   [0;1mUPDATE "sessions" SET "ivars" = '--- !map:HashWithIndifferentAccess 
+Hoodwinkd: !map:HashWithIndifferentAccess 
+ user_id: 1
+' WHERE "id" = 3[0m
+  [4;35;1mCamping::Models::Session Load (0.000619)[0m   [0mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'DthsV8yr8lSnKhDrT90nrKpsxd7Fd7AM') LIMIT 1[0m
+  [4;36;1mHoodwinkd::Models::User Load (0.000855)[0m   [0;1mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;35;1mCamping::Models::Session Load (0.000593)[0m   [0mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'DthsV8yr8lSnKhDrT90nrKpsxd7Fd7AM') LIMIT 1[0m
+  [4;36;1mHoodwinkd::Models::User Load (0.001291)[0m   [0;1mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;35;1mCamping::Models::Session Load (0.000627)[0m   [0mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'DthsV8yr8lSnKhDrT90nrKpsxd7Fd7AM') LIMIT 1[0m
+  [4;36;1mHoodwinkd::Models::User Load (0.000944)[0m   [0;1mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;35;1mCamping::Models::Session Load (0.000750)[0m   [0mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'DthsV8yr8lSnKhDrT90nrKpsxd7Fd7AM') LIMIT 1[0m
+  [4;36;1mCamping::Models::Session Load (0.000510)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'DthsV8yr8lSnKhDrT90nrKpsxd7Fd7AM') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::User Load (0.000807)[0m   [0mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;36;1mHoodwinkd::Models::User Load (0.000872)[0m   [0;1mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;35;1mCamping::Models::Session Load (0.000763)[0m   [0mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'DthsV8yr8lSnKhDrT90nrKpsxd7Fd7AM') LIMIT 1[0m
+  [4;36;1mHoodwinkd::Models::User Load (0.002160)[0m   [0;1mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;35;1mHoodwinkd::Models::Site Load (0.001501)[0m   [0mSELECT * FROM "hoodwinkd_sites" [0m
+  [4;36;1mCamping::Models::Session Load (0.000555)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'DthsV8yr8lSnKhDrT90nrKpsxd7Fd7AM') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::User Load (0.000792)[0m   [0mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;36;1mCamping::Models::Session Load (0.001700)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'DthsV8yr8lSnKhDrT90nrKpsxd7Fd7AM') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::User Load (0.000816)[0m   [0mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;36;1mCamping::Models::Session Load (0.000547)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'DthsV8yr8lSnKhDrT90nrKpsxd7Fd7AM') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::User Load (0.000792)[0m   [0mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;36;1mCamping::Models::Session Load (0.002709)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'DthsV8yr8lSnKhDrT90nrKpsxd7Fd7AM') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::User Load (0.000987)[0m   [0mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;36;1mCamping::Models::Session Load (0.000587)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'DthsV8yr8lSnKhDrT90nrKpsxd7Fd7AM') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::User Load (0.000874)[0m   [0mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;36;1mCamping::Models::Session Load (0.000604)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'DthsV8yr8lSnKhDrT90nrKpsxd7Fd7AM') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::User Load (0.001317)[0m   [0mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;36;1mCamping::Models::Session Load (0.000587)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'DthsV8yr8lSnKhDrT90nrKpsxd7Fd7AM') LIMIT 1[0m
+  [4;35;1mCamping::Models::Session Load (0.000508)[0m   [0mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'DthsV8yr8lSnKhDrT90nrKpsxd7Fd7AM') LIMIT 1[0m
+  [4;36;1mHoodwinkd::Models::User Load (0.000796)[0m   [0;1mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;35;1mHoodwinkd::Models::User Load (0.000926)[0m   [0mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;36;1mSQL (0.030299)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.001781)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mCamping::Models::Session Load (0.000517)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'DthsV8yr8lSnKhDrT90nrKpsxd7Fd7AM') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::User Load (0.000851)[0m   [0mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;36;1mCamping::Models::Session Load (0.000691)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'DthsV8yr8lSnKhDrT90nrKpsxd7Fd7AM') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::User Load (0.000851)[0m   [0mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;36;1mSQL (0.267397)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.001896)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mCamping::Models::Session Load (0.000642)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'DthsV8yr8lSnKhDrT90nrKpsxd7Fd7AM') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::User Load (0.000787)[0m   [0mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;36;1mCamping::Models::Session Load (0.000572)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'DthsV8yr8lSnKhDrT90nrKpsxd7Fd7AM') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::User Load (0.001325)[0m   [0mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;36;1mCamping::Models::Session Load (0.000563)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'DthsV8yr8lSnKhDrT90nrKpsxd7Fd7AM') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::User Load (0.001059)[0m   [0mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;36;1mCamping::Models::Session Load (0.000670)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'DthsV8yr8lSnKhDrT90nrKpsxd7Fd7AM') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::User Load (0.000884)[0m   [0mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;36;1mCamping::Models::Session Load (0.000534)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'DthsV8yr8lSnKhDrT90nrKpsxd7Fd7AM') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::User Load (0.000958)[0m   [0mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;36;1mCamping::Models::Session Load (0.000576)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'DthsV8yr8lSnKhDrT90nrKpsxd7Fd7AM') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::User Load (0.000833)[0m   [0mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;36;1mHoodwinkd::Models::Site Load (0.000300)[0m   [0;1mSELECT * FROM "hoodwinkd_sites" WHERE ("hoodwinkd_sites"."domain" = 'favicon.ico') LIMIT 1[0m
+  [4;35;1mCamping::Models::Session Load (0.000471)[0m   [0mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'DthsV8yr8lSnKhDrT90nrKpsxd7Fd7AM') LIMIT 1[0m
+  [4;36;1mHoodwinkd::Models::User Load (0.001183)[0m   [0;1mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;35;1mCamping::Models::Session Load (0.000918)[0m   [0mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'DthsV8yr8lSnKhDrT90nrKpsxd7Fd7AM') LIMIT 1[0m
+  [4;36;1mHoodwinkd::Models::User Load (0.001415)[0m   [0;1mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;35;1mHoodwinkd::Models::Site Load (0.000353)[0m   [0mSELECT * FROM "hoodwinkd_sites" WHERE ("hoodwinkd_sites"."domain" = 'favicon.ico') LIMIT 1[0m
+  [4;36;1mCamping::Models::Session Load (0.001452)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'DthsV8yr8lSnKhDrT90nrKpsxd7Fd7AM') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::User Load (0.001384)[0m   [0mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;36;1mSQL (0.028268)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.001957)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.030398)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.001706)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mCamping::Models::Session Load (0.000493)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'DthsV8yr8lSnKhDrT90nrKpsxd7Fd7AM') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::User Load (0.000826)[0m   [0mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;36;1mCamping::Models::Session Load (0.001415)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'DthsV8yr8lSnKhDrT90nrKpsxd7Fd7AM') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::User Load (0.000958)[0m   [0mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;36;1mCamping::Models::Session Load (0.000547)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'DthsV8yr8lSnKhDrT90nrKpsxd7Fd7AM') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::User Load (0.000896)[0m   [0mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;36;1mCamping::Models::Session Load (0.000544)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'DthsV8yr8lSnKhDrT90nrKpsxd7Fd7AM') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::User Load (0.000855)[0m   [0mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;36;1mCamping::Models::Session Load (0.000576)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'DthsV8yr8lSnKhDrT90nrKpsxd7Fd7AM') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::User Load (0.000862)[0m   [0mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;36;1mSQL (0.021794)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.001755)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mCamping::Models::Session Load (0.000504)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'DthsV8yr8lSnKhDrT90nrKpsxd7Fd7AM') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::User Load (0.000815)[0m   [0mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;36;1mCamping::Models::Session Load (0.000543)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'DthsV8yr8lSnKhDrT90nrKpsxd7Fd7AM') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::User Load (0.000828)[0m   [0mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;36;1mCamping::Models::Session Load (0.000568)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'DthsV8yr8lSnKhDrT90nrKpsxd7Fd7AM') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::User Load (0.000793)[0m   [0mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;36;1mCamping::Models::Session Load (0.000562)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'DthsV8yr8lSnKhDrT90nrKpsxd7Fd7AM') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::User Load (0.000808)[0m   [0mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;36;1mCamping::Models::Session Load (0.000568)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'DthsV8yr8lSnKhDrT90nrKpsxd7Fd7AM') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::User Load (0.000831)[0m   [0mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;36;1mCamping::Models::Session Load (0.000881)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'DthsV8yr8lSnKhDrT90nrKpsxd7Fd7AM') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::User Load (0.000803)[0m   [0mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;36;1mSQL (0.021409)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000946)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.017124)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.001780)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.001476)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000938)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mCamping::Models::Session Load (0.000501)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'DthsV8yr8lSnKhDrT90nrKpsxd7Fd7AM') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::User Load (0.000821)[0m   [0mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;36;1mCamping::Models::Session Load (0.001537)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'DthsV8yr8lSnKhDrT90nrKpsxd7Fd7AM') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::User Load (0.001213)[0m   [0mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;36;1mCamping::Models::Session Load (0.000552)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'DthsV8yr8lSnKhDrT90nrKpsxd7Fd7AM') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::User Load (0.000778)[0m   [0mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;36;1mCamping::Models::Session Load (0.000682)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'DthsV8yr8lSnKhDrT90nrKpsxd7Fd7AM') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::User Load (0.000801)[0m   [0mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;36;1mCamping::Models::Session Load (0.000521)[0m   [0;1mSELECT * FROM "sessions" WHERE ("sessions"."hashid" = 'DthsV8yr8lSnKhDrT90nrKpsxd7Fd7AM') LIMIT 1[0m
+  [4;35;1mHoodwinkd::Models::User Load (0.000786)[0m   [0mSELECT * FROM "hoodwinkd_users" WHERE ("hoodwinkd_users"."id" = 1) [0m
+  [4;36;1mSQL (0.031043)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.002046)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.019689)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.001855)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.027760)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.001970)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m

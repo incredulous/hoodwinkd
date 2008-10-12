@@ -1,6 +1,0 @@
-salt: <32-char hex>
-adapter: mysql
-username: <username>
-host: <hostname>
-password: <password>
-database: hoodwinkd

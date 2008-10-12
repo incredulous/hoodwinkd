@@ -70,8 +70,7 @@ module Hoodwinkd::Models
     end
 
     class Site < Base
-        belongs_to :creator, :foreign_key => 'creator_id',
-            :class_name => 'User'
+        belongs_to :creator, :class_name => 'User'
         has_one :linked_site, :class_name => self.name
         has_many :layers
         validates_uniqueness_of :domain

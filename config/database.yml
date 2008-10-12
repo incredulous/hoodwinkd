@@ -1,0 +1,3 @@
+salt: 1a2s3d4f5g6h7j8k9l0q1w2e3r4t5y6u
+adapter: sqlite3
+database: db/hoodwinkd.db
