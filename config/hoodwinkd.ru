@@ -1,6 +1,5 @@
 #!/usr/bin/env ruby
 
-puts File.expand_path("../../lib", __FILE__)
 $: << File.expand_path("../../lib", __FILE__)
 require 'rubygems'
 require 'hoodwinkd'
